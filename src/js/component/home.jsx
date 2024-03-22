@@ -35,11 +35,5 @@ const Home = () => {
 	);
 };
 
-const Jumbotron = () => {
-	return (
-
-	);
-};
-
 
 export default Home;
