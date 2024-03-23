@@ -15,8 +15,10 @@ import Footer from "./component/footer.jsx";
 ReactDOM.render(
     <div>
       <Home />
-      <Jumbotron />
-      <Card />
+        <div class="container">
+          <Jumbotron />
+          <Card />
+        </div>
       <Footer />
     </div>,
     document.querySelector("#app")
