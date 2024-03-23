@@ -7,12 +7,11 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Jumbotron = () => {
 	return (
 		<div className="container">
-			<div className="jumbotron">
-  				<h1 className="display-4">Hello, world!</h1>
- 				<p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			<div className="jumbotron mt-2">
+			<img src="https://img.freepik.com/foto-gratis/herramientas-deportivas_53876-138077.jpg?t=st=1711216357~exp=1711219957~hmac=103e0e6ddd01f4133760c7a402427cc087a5de69150d54d88ad587cc3f82256f&w=1380" class="img-fluid" alt="Imagen en el jumbotron"/>
+  				<h1 className="display-4 text-center mt-2">Deportes</h1>
   				<hr className="my-4"/>
-  				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  				<a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  				<a className="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Leer Mas!</a>
 			</div>
 		</div>
 	);
