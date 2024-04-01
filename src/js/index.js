@@ -6,10 +6,10 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import App from "./App.js";
+import Home from "./component/Home.jsx";
 
 //render your react application
 ReactDOM.render(
-      <App />,     
+      <Home />,     
     document.querySelector("#app")
   );

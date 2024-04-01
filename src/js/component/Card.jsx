@@ -2,56 +2,41 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import GaleriaImagenes from "./GaleriaImagenes.jsx";
+
 
 //create your first component
-const Card = () => {
-	return (
-        <div className="container mb-5">
-		    <div className="card-group">
-                <div className="card">
-                    <img src="https://img.freepik.com/foto-gratis/entrenador-futbol-ensenando-sus-alumnos_23-2149707974.jpg?w=1380&t=st=1711144650~exp=1711145250~hmac=ec5a58e2cec2add07d8c20faf11ca9289f3bb940868c03a20fdbd332f4c6d159" class="card-img-top" alt="..."/>
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div className="card-footer text-center">
-                        <button type="button" className="btn btn-primary">Leer Mas!</button>
-                    </div>
-                </div>
-        <div className="card border ml-2">
-            <img src="https://img.freepik.com/fotos-premium/retrato-joven-sonriente-parado-al-aire-libre_1048944-29813224.jpg?t=st=1711137075~exp=1711137675~hmac=7bae20cda62313cf742091bb49bc2a9009eb4e69374d8860421affc65a7476c2" class="card-img-top" alt="..."/>
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div className="card-footer text-center">
-                <button type="button" className="btn btn-warning">Leer Mas!</button>
-            </div>
-        </div>
-  <div className="card border ml-2">
-    <img src="https://img.freepik.com/fotos-premium/longitud-total-hombre-jugando-brazos-levantados_1048944-29793390.jpg?t=st=1711137075~exp=1711137675~hmac=ab5d0d1c482e55394f57b821669caafeeeabbb0bbb478988abda72ee8fda57e6" class="card-img-top" alt="..."/>
-    <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div className="card-footer text-center">
-    <button type="button" className="btn btn-info">Leer Mas!</button>
-    </div>
-  </div>
-  <div className="card border ml-2">
-    <img src="https://img.freepik.com/fotos-premium/escenas-autenticas-hombres-talla-grande-jugando-al-baloncesto_23-2150961227.jpg?t=st=1711137075~exp=1711137675~hmac=6cd6841eb53267b6837979a31a5467eb0c1be40cc9862d5fd35e1b0e1c272bde&w=826" class="card-img-top" alt="..."/>
-    <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div className="card-footer text-center">
-    <button type="button" className="btn btn-danger">Leer Mas!</button>
-    </div>
-  </div>
-</div>
-</div>
-	);
-};
+const imagenes = [
+  {
+    url: "https://img.freepik.com/foto-gratis/entrenador-futbol-ensenando-sus-alumnos_23-2149707974.jpg?w=1380&t=st=1711991966~exp=1711992566~hmac=c1118de8c8d7949369295724e816225cbca0a6c86f153caf6baa1c12b4e48573",
+    titulo: "titulo imagen 1",
+    descripcion: "descripcion imagen 1",
+  },
+  {
+    url: "https://img.freepik.com/fotos-premium/retrato-joven-sonriente-parado-al-aire-libre_1048944-29813224.jpg?w=1380",
+    titulo: "titulo imagen 2",
+    descripcion: "descripcion imagen 2",
+  },
+  {
+    url: "https://img.freepik.com/fotos-premium/longitud-total-hombre-jugando-brazos-levantados_1048944-29793390.jpg?w=1380",
+    titulo: "titulo imagen 3",
+    descripcion: "descripcion imagen 3"
+  },
+  {
+    url: "https://img.freepik.com/fotos-premium/escenas-autenticas-hombres-talla-grande-jugando-al-baloncesto_23-2150961227.jpg?w=1380",
+    titulo: "titulo imagen 4",
+    descripcion: "descripcion imagen 4"
+  }
+]
 
+
+
+function Card() {
+  return (
+    <div>
+      <GaleriaImagenes imagenes={imagenes} />
+    </div>
+  );
+}
 
 export default Card;
